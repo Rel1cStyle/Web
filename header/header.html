@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css">
+	<link rel="stylesheet" href="/header/style.css">
+	<!----- JQuery / スクリプト ----->
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	<title>Header</title>
+	<!----- スマホナビの表示・非表示 ----->
+	<script>
+		$(function() {
+			const hum = $('#hamburger, .close')
+			const nav = $('.sp-nav')
+			hum.on('click', function(){
+				nav.toggleClass('toggle');
+			});
+		});
+	</script>
+</head>
+<body>
+	<!-- ヘッダーメニュー -->
+	<a href="/"><img src="/images/Rel1cStyle_Logo_Type_White.png" alt=""></a>
+	<nav class="pc-nav">
+		<ul>
+			<li><a class="menu-item" href="/about">ABOUT</a></li>
+			<li><a class="menu-item" href="/gallery">GALLERY</a></li>
+			<li><a class="menu-item" href="">GOODS</a></li>
+		</ul>
+	</nav>
+	<nav class="sp-nav">
+		<ul>
+			<li><a class="menu-item" href="/about">ABOUT</a></li>
+			<li><a class="menu-item" href="/gallery">GALLERY</a></li>
+			<li><a class="menu-item" href="">GOODS</a></li>
+			<li><a class="close">CLOSE</a></li>
+		</ul>
+	</nav>
+	<div id="hamburger">
+		<span></span>
+	</div>
+</body>

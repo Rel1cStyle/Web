@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+/* ローディング画面 */
+#loading-sc.loading {
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#loading-sc.loading img {
+	width: 15em;
+}
